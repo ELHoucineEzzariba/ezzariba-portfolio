@@ -14,7 +14,7 @@ export function OtherProjects({ lang }: OtherProjectsProps) {
   return (
     <section id="projects" className="relative py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mb-14">
+        <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 0.4 }} className="mb-14">
           <span className="section-tag">{t.other.tag}</span>
           <h2 className="mt-4 max-w-2xl font-[family-name:var(--font-syne)] text-3xl font-bold tracking-tight sm:text-4xl">{t.other.title}</h2>
           <p className="mt-4 max-w-2xl text-zinc-400">{t.other.subtitle}</p>
@@ -22,7 +22,7 @@ export function OtherProjects({ lang }: OtherProjectsProps) {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {otherProjects.map((project, index) => {
             const Icon = icons[project.icon as keyof typeof icons] ?? Layers3;
-            return <motion.article key={project.id} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35, delay: (index % 3) * 0.05 }} className="card-glass group flex flex-col overflow-hidden transition-colors hover:border-white/15 hover:bg-white/[0.05]">
+            return <motion.article key={project.id} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 0.35, delay: (index % 3) * 0.05 }} className="card-glass group flex flex-col overflow-hidden transition-colors hover:border-white/15 hover:bg-white/[0.05]">
               <ScrollProjectImage src={project.image} alt={`${project.title} Projektansicht`} compact />
               <div className="flex flex-1 flex-col p-5">
               <div className="flex items-start justify-between gap-3">

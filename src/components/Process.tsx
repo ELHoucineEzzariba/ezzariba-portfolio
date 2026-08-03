@@ -16,7 +16,7 @@ export function Process({ lang }: ProcessProps) {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: false, margin: "-80px" }}
           transition={{ duration: 0.6 }}
           className="mb-14 text-center"
         >
@@ -32,7 +32,7 @@ export function Process({ lang }: ProcessProps) {
               key={step.title}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-30px" }}
+              viewport={{ once: false, margin: "-30px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="relative text-center"
             >

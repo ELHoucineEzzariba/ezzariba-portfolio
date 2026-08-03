@@ -19,7 +19,7 @@ export function About({ lang }: AboutProps) {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: false, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
           <span className="section-tag">{t.tag}</span>
@@ -39,7 +39,7 @@ export function About({ lang }: AboutProps) {
                 key={item.label}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
+                viewport={{ once: false, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="card-glass group p-6 transition-colors hover:border-white/15"
               >
@@ -60,7 +60,7 @@ export function About({ lang }: AboutProps) {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-10 flex items-center gap-2 text-sm text-zinc-500"
         >

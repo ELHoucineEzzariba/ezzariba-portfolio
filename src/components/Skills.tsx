@@ -18,7 +18,7 @@ export function Skills({ lang }: SkillsProps) {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: false, margin: "-80px" }}
           transition={{ duration: 0.6 }}
           className="mb-14"
         >
@@ -35,7 +35,7 @@ export function Skills({ lang }: SkillsProps) {
               key={cat.title}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
+              viewport={{ once: false, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="card-glass p-6"
             >

@@ -17,7 +17,7 @@ export function FeaturedProjects({ lang }: FeaturedProjectsProps) {
     <section id="featured" className="relative py-28">
       <div className="glow-orb top-0 right-0 h-[300px] w-[300px] bg-violet-500/10" />
       <div className="relative mx-auto max-w-6xl px-6">
-        <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.4 }} className="mb-14">
+        <motion.div initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-80px" }} transition={{ duration: 0.4 }} className="mb-14">
           <span className="section-tag">{t.featured.tag}</span>
           <h2 className="mt-4 max-w-3xl font-[family-name:var(--font-syne)] text-3xl font-bold tracking-tight sm:text-4xl">{t.featured.title}</h2>
           <p className="mt-4 max-w-2xl text-zinc-400">{t.featured.subtitle}</p>
@@ -27,7 +27,7 @@ export function FeaturedProjects({ lang }: FeaturedProjectsProps) {
           {featuredProjects.map((project, index) => {
             const Icon = icons[project.icon as keyof typeof icons] ?? Workflow;
             return (
-              <motion.article key={project.id} initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-40px" }} transition={{ duration: 0.45, delay: index * 0.06 }} className="case-study overflow-hidden rounded-3xl border border-white/10 bg-white/[0.025]">
+              <motion.article key={project.id} initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, margin: "-40px" }} transition={{ duration: 0.45, delay: index * 0.06 }} className="case-study overflow-hidden rounded-3xl border border-white/10 bg-white/[0.025]">
                 <div className="grid lg:grid-cols-[.78fr_1.22fr]">
                   <div className="relative min-h-[360px] overflow-hidden border-b border-white/10 lg:border-r lg:border-b-0">
                     <ScrollProjectImage src={project.image} alt={`${project.title} Benutzeroberfläche`} />

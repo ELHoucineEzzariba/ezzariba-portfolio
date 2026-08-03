@@ -19,7 +19,7 @@ export function Contact({ lang }: ContactProps) {
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: false, margin: "-80px" }}
           transition={{ duration: 0.6 }}
           className="card-glass mx-auto max-w-3xl overflow-hidden p-10 text-center sm:p-14"
         >
