@@ -1,0 +1,17 @@
+# Independent applications are deployed separately to their own subdomains.
+potfolio Kopie/
+
+# Local caches and environment files must never be uploaded.
+.next/
+node_modules/
+.env
+.env.*
+*.log
+
+# The optimized public copy is used by the website.
+bild.png
+
+# Local editor and agent metadata.
+.agents/
+.codex/
+.DS_Store

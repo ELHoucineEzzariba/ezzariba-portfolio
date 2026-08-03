@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# projects are published as separate repositories
+/potfolio Kopie/
+
+# local source photo (optimized copy lives in public/)
+/bild.png
