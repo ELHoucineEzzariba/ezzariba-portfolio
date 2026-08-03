@@ -71,7 +71,7 @@ export const projects: Project[] = [
       "Firebase",
       "OpenAI",
     ],
-    liveUrl: "https://novalearn.ezzariba.com",
+    liveUrl: "https://novalearn-app.pages.dev",
     featured: true,
     gradient: "from-emerald-500/40 via-green-400/20 to-transparent",
     accent: "#10b981",
