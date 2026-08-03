@@ -45,3 +45,6 @@ next-env.d.ts
 
 # local source photo (optimized copy lives in public/)
 /bild.png
+
+# separate recruiter-facing project repositories
+/github-projects/
