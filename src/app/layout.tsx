@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
+import { LegalFooter } from "./_legal/LegalPage";
 
 const syne = Syne({
   variable: "--font-syne",
@@ -47,7 +48,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={`${syne.variable} ${dmSans.variable}`}>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        {children}
+        <LegalFooter />
+      </body>
     </html>
   );
 }
