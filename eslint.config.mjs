@@ -12,6 +12,7 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "potfolio Kopie/**",
+    "github-projects/**",
     "next-env.d.ts",
   ]),
 ]);

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, FileText } from "lucide-react";
+import { BriefcaseBusiness, Code2, Download, Mail } from "lucide-react";
 import { SITE, translations, type Language } from "@/data/site";
 
 type ContactProps = {
@@ -34,17 +34,7 @@ export function Contact({ lang }: ContactProps) {
               <Mail size={18} />
               {t.email}
             </a>
-            {SITE.cvUrl ? (
-              <a href={SITE.cvUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                <FileText size={18} />
-                {t.cv}
-              </a>
-            ) : (
-              <span className="btn-secondary cursor-default opacity-50">
-                <FileText size={18} />
-                {t.cv} — {t.cvSoon}
-              </span>
-            )}
+            <a href={SITE.cvUrl} download className="btn-secondary"><Download size={18} />{t.cv}</a>
           </div>
 
           {(SITE.githubUrl || SITE.linkedinUrl) && (
@@ -54,9 +44,9 @@ export function Contact({ lang }: ContactProps) {
                   href={SITE.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-white/10 px-4 py-2 text-sm text-zinc-400 transition-colors hover:border-white/20 hover:text-white"
+                  className="social-link"
                 >
-                  GitHub
+                  <Code2 size={17} /> GitHub
                 </a>
               )}
               {SITE.linkedinUrl && (
@@ -64,9 +54,9 @@ export function Contact({ lang }: ContactProps) {
                   href={SITE.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-white/10 px-4 py-2 text-sm text-zinc-400 transition-colors hover:border-white/20 hover:text-white"
+                  className="social-link"
                 >
-                  LinkedIn
+                  <BriefcaseBusiness size={17} /> LinkedIn
                 </a>
               )}
             </div>

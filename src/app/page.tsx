@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <div className="grain" aria-hidden="true" />
       <Navbar lang={lang} onLangChange={setLang} />
-      <main>
+      <main id="main-content">
         <Hero lang={lang} />
         <About lang={lang} />
         <FeaturedProjects lang={lang} />

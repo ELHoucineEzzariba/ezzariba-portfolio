@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowDown, ArrowRight, Mail, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowRight, Code2, Download, Sparkles } from "lucide-react";
 import { SITE, translations, type Language } from "@/data/site";
 import { featuredProjects, projects } from "@/data/projects";
 
@@ -12,10 +12,10 @@ type HeroProps = {
 
 export function Hero({ lang }: HeroProps) {
   const t = translations[lang].hero;
-  const stackCount = new Set(projects.flatMap((p) => p.stack)).size;
+  const liveCount = projects.filter((project) => project.liveUrl).length;
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden pt-24">
+    <section className="relative flex min-h-dvh items-center overflow-hidden pt-24">
       <div className="glow-orb -top-32 left-1/4 h-[500px] w-[500px] bg-cyan-500/20" />
       <div className="glow-orb top-1/3 -right-32 h-[400px] w-[400px] bg-violet-500/15" />
       <div className="absolute inset-0 grid-bg" />
@@ -67,10 +67,11 @@ export function Hero({ lang }: HeroProps) {
             {t.ctaPrimary}
             <ArrowRight size={18} />
           </a>
-          <a href={`mailto:${SITE.email}`} className="btn-secondary">
-            <Mail size={18} />
+          <a href={SITE.cvUrl} download className="btn-secondary">
+            <Download size={18} />
             {t.ctaSecondary}
           </a>
+          <a href={SITE.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-icon" aria-label="GitHub Profil öffnen"><Code2 size={19} /></a>
         </motion.div>
 
         </div>
@@ -95,7 +96,7 @@ export function Hero({ lang }: HeroProps) {
             />
             <div className="portrait-caption">
               <span>Frontend Developer</span>
-              <span>Köln · DE</span>
+              <span>Sankt Augustin · DE</span>
             </div>
           </div>
         </motion.div>
@@ -109,7 +110,7 @@ export function Hero({ lang }: HeroProps) {
           {[
             { value: projects.length, label: t.stats.projects },
             { value: featuredProjects.length, label: t.stats.featured },
-            { value: stackCount, label: t.stats.stack },
+            { value: liveCount, label: t.stats.stack },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="font-[family-name:var(--font-syne)] text-3xl font-bold text-white">

@@ -27,12 +27,13 @@ export const metadata: Metadata = {
     "Next.js",
     "TypeScript",
     "Portfolio",
-    "Köln",
+    "Sankt Augustin",
+    "Köln/Bonn",
   ],
   openGraph: {
     title: "Elhoucine Ezzariba — Frontend-Entwickler",
     description:
-      "Ich baue Web-Erlebnisse, die Recruiter merken. React · Next.js · TypeScript",
+      "Frontend, das man prüfen kann. React · Next.js · TypeScript · Live-Demos · Quellcode",
     type: "website",
     locale: "de_DE",
     url: "https://ezzariba.com",
@@ -49,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="de" className={`${syne.variable} ${dmSans.variable}`}>
       <body className="min-h-screen antialiased">
+        <a href="#main-content" className="skip-link">Zum Hauptinhalt</a>
         {children}
         <LegalFooter />
       </body>

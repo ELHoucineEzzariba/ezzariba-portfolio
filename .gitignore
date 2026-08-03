@@ -45,6 +45,7 @@ next-env.d.ts
 
 # local source photo (optimized copy lives in public/)
 /bild.png
+/El_Houcine_Ezzariba_Lebenslauf.docx
 
 # separate recruiter-facing project repositories
 /github-projects/

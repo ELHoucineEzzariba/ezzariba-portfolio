@@ -42,7 +42,7 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6">
         <a
           href="#"
-          className="font-[family-name:var(--font-syne)] text-lg font-bold tracking-tight"
+          className="inline-flex min-h-11 items-center font-[family-name:var(--font-syne)] text-lg font-bold tracking-tight"
         >
           {SITE.shortName}
           <span className="text-accent">.</span>
@@ -67,7 +67,7 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
                 key={l}
                 onClick={() => onLangChange(l)}
                 className={cn(
-                  "rounded-full px-3 py-1 uppercase transition-all",
+                  "min-h-11 min-w-11 rounded-full px-3 py-1 uppercase transition-all",
                   lang === l
                     ? "bg-white/10 text-white"
                     : "text-zinc-500 hover:text-zinc-300"
@@ -83,9 +83,10 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
           </a>
 
           <button
-            className="rounded-lg p-2 text-zinc-400 md:hidden"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg p-2 text-zinc-400 md:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Menu"
+            aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
