@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Bot, Car, ChartNoAxesCombined, Code2, ExternalLink, Film, Gamepad2, Layers3, MessageSquareMore, PhoneCall, Truck } from "lucide-react";
+import { Bot, Car, ChartNoAxesCombined, Code2, ExternalLink, Film, Gamepad2, Layers3, MessageSquareMore, PhoneCall, Radar, Truck } from "lucide-react";
 import { otherProjects } from "@/data/projects";
 import { SITE, translations, type Language } from "@/data/site";
 import { ScrollProjectImage } from "@/components/ScrollProjectImage";
 
 type OtherProjectsProps = { lang: Language };
-const icons = { voice: PhoneCall, game: Gamepad2, film: Film, crm: MessageSquareMore, spark: Bot, car: Car, truck: Truck, chart: ChartNoAxesCombined };
+const icons = { voice: PhoneCall, game: Gamepad2, film: Film, crm: MessageSquareMore, spark: Bot, car: Car, truck: Truck, chart: ChartNoAxesCombined, radar: Radar };
 
 export function OtherProjects({ lang }: OtherProjectsProps) {
   const t = translations[lang];
