@@ -12,10 +12,10 @@ type FeaturedProjectsProps = { lang: Language };
 type Filter = "all" | "ai" | "data" | "software" | "frontend";
 
 const categoryProjects: Record<Exclude<Filter, "all">, string[]> = {
-  ai: ["novavoice", "nova-ai-builder", "novachat"],
-  data: ["marketflow", "novacrm", "dexscope"],
-  software: ["dexscope", "elpolloloco", "novacrm", "speedytl"],
-  frontend: ["cinenova", "novadrive", "autohaus-luxury", "speedytl"],
+  ai: ["novavoice"],
+  data: ["novavoice", "novacrm", "dexscope"],
+  software: ["dexscope", "novachat", "elpolloloco"],
+  frontend: ["cinenova", "novadrive", "nova-ai-builder", "speedytl"],
 };
 
 function belongsTo(project: Project, filter: Filter) {
