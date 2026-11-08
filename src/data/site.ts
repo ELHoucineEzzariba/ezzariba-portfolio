@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Elhoucine Ezzariba",
   shortName: "Ezzariba",
-  role: "AI Software Engineer",
+  role: "Software & AI · Wirtschaftsinformatik",
   email: "el.ezzariba@gmail.com",
   location: "Sankt Augustin · Köln/Bonn",
   githubUrl: "https://github.com/ELHoucineEzzariba",
@@ -29,7 +29,7 @@ export const translations = {
       title: "AI, die nicht im Prompt endet —",
       titleAccent: "sondern zum Produkt wird.",
       subtitle:
-        "Wirtschaftsinformatik-Student und AI Software Engineer. Ich verbinde generative KI, moderne Frontends und Datenanalyse zu produktnahen Anwendungen — vom Prototyp bis zum Deployment.",
+        "Wirtschaftsinformatik-Student an der TH Köln mit Fokus auf Softwareentwicklung und KI-Integration. Ich baue Web-Anwendungen mit generativer KI, modernen Frontends und Datenanalyse — vom Prototyp bis zum Deployment.",
       ctaPrimary: "Ausgewählte Arbeiten",
       ctaSecondary: "Lebenslauf laden",
       stats: {
@@ -44,7 +44,7 @@ export const translations = {
       text: "Ich studiere Wirtschaftsinformatik an der TH Köln und entwickle AI-gestützte Anwendungen an der Schnittstelle von Frontend, Daten und Geschäftsprozessen. Meine Arbeit reicht von der Anforderungsanalyse und UI-Konzeption über LLM- und API-Integration bis zur typisierten Implementierung und Veröffentlichung.",
       highlights: [
         { label: "Studium", value: "Wirtschaftsinformatik · TH Köln" },
-        { label: "Fokus", value: "AI Engineering · React · Python" },
+        { label: "Fokus", value: "TypeScript · React · Python · KI-APIs" },
         { label: "Stärke", value: "Frontend · Daten · KI-Integration" },
         { label: "Verfügbar", value: "Werkstudent · Teilzeit · Vollzeit" },
       ],
@@ -83,19 +83,21 @@ export const translations = {
           items: [
             "Framer Motion",
             "React Flow",
-            "Chart.js",
+            "Recharts",
             "Responsive Design",
             "Design Systems",
-            "Glassmorphism",
+            "Three.js",
           ],
         },
         {
           title: "Backend & Services",
           items: [
+            "Python",
+            "FastAPI",
+            "WebSockets",
             "Firebase",
             "REST APIs",
-            "OpenAI / Claude API",
-            "Weather API",
+            "Google Gemini API",
             "SQL",
           ],
         },
@@ -104,7 +106,7 @@ export const translations = {
           items: [
             "Git & GitHub",
             "Cloudflare Pages & Workers",
-            "Cursor & AI Coding",
+            "Testing (Vitest, pytest)",
             "Figma",
             "Agile",
           ],
@@ -137,11 +139,11 @@ export const translations = {
       tag: "05 — Lebenslauf",
       title: "Mehr als eine Liste von Stationen.",
       subtitle:
-        "Mein Profil verbindet AI Engineering, moderne Softwareentwicklung und Datenanalyse mit Wirtschaftsinformatik und praktischer Prozesserfahrung.",
+        "Mein Profil verbindet KI-Integration, moderne Softwareentwicklung und Datenanalyse mit Wirtschaftsinformatik und praktischer Prozesserfahrung.",
       status: "Aktueller Stand · August 2026",
-      role: "AI Software Engineer · Frontend · Datenanalyse",
+      role: "Software & AI · Frontend · Datenanalyse",
       facts: [
-        { label: "Heute", value: "Kommissionierer · Harry-Brot, Bonn" },
+        { label: "Suche", value: "Werkstudent · Software & AI · Köln/Bonn" },
         { label: "Studium", value: "B.Sc. Wirtschaftsinformatik · TH Köln" },
         { label: "Praxis", value: "AI-Assistenten · Web-Apps · Dashboards" },
       ],
@@ -183,7 +185,7 @@ export const translations = {
       title: "AI that does not end with a prompt —",
       titleAccent: "but becomes a product.",
       subtitle:
-        "Business Informatics student and AI Software Engineer. I combine generative AI, modern frontends and data analytics into product-oriented applications — from prototype to deployment.",
+        "Business Informatics student at TH Köln focused on software development and AI integration. I build web applications with generative AI, modern frontends and data analytics — from prototype to deployment.",
       ctaPrimary: "Selected work",
       ctaSecondary: "Download resume",
       stats: {
@@ -198,7 +200,7 @@ export const translations = {
       text: "I study Business Informatics at TH Köln and build AI-enabled applications at the intersection of frontend, data and business processes. My work spans requirements analysis and UI concepts through LLM and API integration, typed implementation and deployment.",
       highlights: [
         { label: "Education", value: "Business Informatics · TH Köln" },
-        { label: "Focus", value: "AI Engineering · React · Python" },
+        { label: "Focus", value: "TypeScript · React · Python · AI APIs" },
         { label: "Strength", value: "Frontend · Data · AI Integration" },
         { label: "Available", value: "Working Student · Part-Time · Full-Time" },
       ],
@@ -237,19 +239,21 @@ export const translations = {
           items: [
             "Framer Motion",
             "React Flow",
-            "Chart.js",
+            "Recharts",
             "Responsive Design",
             "Design Systems",
-            "Glassmorphism",
+            "Three.js",
           ],
         },
         {
           title: "Backend & Services",
           items: [
+            "Python",
+            "FastAPI",
+            "WebSockets",
             "Firebase",
             "REST APIs",
-            "OpenAI / Claude API",
-            "Weather API",
+            "Google Gemini API",
             "SQL",
           ],
         },
@@ -258,7 +262,7 @@ export const translations = {
           items: [
             "Git & GitHub",
             "Cloudflare Pages & Workers",
-            "Cursor & AI Coding",
+            "Testing (Vitest, pytest)",
             "Figma",
             "Agile",
           ],
@@ -291,11 +295,11 @@ export const translations = {
       tag: "05 — Resume",
       title: "More than a list of positions.",
       subtitle:
-        "My profile combines AI engineering, modern software development and data analytics with Business Informatics and hands-on process experience.",
+        "My profile combines AI integration, modern software development and data analytics with Business Informatics and hands-on process experience.",
       status: "Current version · August 2026",
-      role: "AI Software Engineer · Frontend · Data Analytics",
+      role: "Software & AI · Frontend · Data Analytics",
       facts: [
-        { label: "Today", value: "Order Picker · Harry-Brot, Bonn" },
+        { label: "Looking for", value: "Working student · Software & AI · Cologne/Bonn" },
         { label: "Studies", value: "B.Sc. Business Informatics · TH Köln" },
         { label: "Practice", value: "AI assistants · Web apps · Dashboards" },
       ],

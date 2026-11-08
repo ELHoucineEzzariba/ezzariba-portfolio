@@ -93,7 +93,7 @@ export function Hero({ lang }: HeroProps) {
               className="h-auto w-full object-cover"
             />
             <div className="portrait-caption">
-              <span>AI Software Engineer</span>
+              <span>{SITE.role}</span>
               <span>Sankt Augustin · DE</span>
             </div>
           </div>

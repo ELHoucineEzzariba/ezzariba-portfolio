@@ -1,6 +1,6 @@
 # Ezzariba Portfolio
 
-Recruiter-fokussiertes Frontend-Portfolio für **Elhoucine Ezzariba** — Webentwickler / Frontend-Entwickler.
+Recruiter-fokussiertes Frontend-Portfolio für **Elhoucine Ezzariba** — Wirtschaftsinformatik-Student · Software & AI.
 
 ## Tech Stack
 
@@ -23,7 +23,7 @@ npm run dev
 | Datei | Inhalt |
 |-------|--------|
 | `src/data/site.ts` | Name, E-Mail, LinkedIn, GitHub, CV-Link, Übersetzungen |
-| `src/data/projects.ts` | Alle 11 Projekte mit Beschreibungen, Stack & Live-URLs |
+| `src/data/projects.ts` | Alle Projekte mit Beschreibungen, Stack & Live-URLs |
 
 ## Deploy
 

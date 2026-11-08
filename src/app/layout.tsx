@@ -16,11 +16,12 @@ const archivo = Archivo({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ezzariba.com"),
-  title: "Elhoucine Ezzariba — AI Software Engineer",
+  title: "Elhoucine Ezzariba — Software & AI · Wirtschaftsinformatik",
   description:
-    "Portfolio von Elhoucine Ezzariba — AI Software Engineer mit Fokus auf generative KI, React, Next.js, TypeScript, Python und Datenanalyse.",
+    "Portfolio von Elhoucine Ezzariba — Wirtschaftsinformatik-Student (TH Köln) mit Fokus auf Softwareentwicklung, KI-Integration, React, Next.js, TypeScript und Python.",
   keywords: [
-    "AI Software Engineer",
+    "Werkstudent Softwareentwicklung",
+    "Wirtschaftsinformatik",
     "Webentwickler",
     "React",
     "Next.js",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     "Köln/Bonn",
   ],
   openGraph: {
-    title: "Elhoucine Ezzariba — AI Software Engineer",
+    title: "Elhoucine Ezzariba — Software & AI · Wirtschaftsinformatik",
     description:
       "AI wird zum Produkt. Generative KI · React · Python · Datenanalyse · Live-Demos",
     type: "website",
