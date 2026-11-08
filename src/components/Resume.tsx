@@ -98,7 +98,7 @@ export function Resume({ lang }: ResumeProps) {
               <ArrowUpRight size={16} />
             </div>
             <Image
-              src="/El_Houcine_Ezzariba_Lebenslauf_AI_Software_Engineering_preview.png"
+              src="/El_Houcine_Ezzariba_Lebenslauf_Software_AI_preview.png"
               alt={t.previewAlt}
               width={1000}
               height={1414}
