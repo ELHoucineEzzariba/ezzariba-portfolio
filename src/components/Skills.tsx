@@ -12,8 +12,6 @@ export function Skills({ lang }: SkillsProps) {
 
   return (
     <section id="skills" className="relative py-28">
-      <div className="glow-orb bottom-0 left-1/4 h-[350px] w-[350px] bg-cyan-500/10" />
-
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -37,7 +35,7 @@ export function Skills({ lang }: SkillsProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="card-glass p-6"
+              className="skill-group"
             >
               <h3 className="font-[family-name:var(--font-syne)] text-lg font-semibold">
                 {cat.title}
@@ -46,7 +44,7 @@ export function Skills({ lang }: SkillsProps) {
                 {cat.items.map((item) => (
                   <span
                     key={item}
-                    className="rounded-lg border border-white/8 bg-white/[0.03] px-3 py-1.5 text-sm text-zinc-300 transition-colors hover:border-cyan-500/30 hover:bg-cyan-500/5 hover:text-white"
+                    className="skill-item"
                   >
                     {item}
                   </span>

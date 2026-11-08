@@ -1,10 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#a78bfa"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="16" fill="#08080f"/>
-  <path d="M18 16h30v8H27v8h18v8H27v8h22v8H18V16Z" fill="url(#g)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Elhoucine Ezzariba">
+  <rect width="64" height="64" fill="#172554"/>
+  <path d="M9 14h25v7H17v8h14v7H17v9h17v7H9V14Z" fill="#F7F8F4"/>
+  <path d="M38 14h8v31h9v7H38V14Z" fill="#F7F8F4"/>
+  <rect x="49" y="14" width="6" height="6" fill="#F05A28"/>
 </svg>

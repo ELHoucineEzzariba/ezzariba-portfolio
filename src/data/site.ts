@@ -1,12 +1,13 @@
 export const SITE = {
   name: "Elhoucine Ezzariba",
   shortName: "Ezzariba",
-  role: "Frontend-Entwickler",
+  role: "AI Software Engineer",
   email: "el.ezzariba@gmail.com",
   location: "Sankt Augustin · Köln/Bonn",
   githubUrl: "https://github.com/ELHoucineEzzariba",
   linkedinUrl: "https://linkedin.com/in/el-houcine-ezzariba-97593a252",
-  cvUrl: "/El_Houcine_Ezzariba_Lebenslauf.docx",
+  cvUrl: "/El_Houcine_Ezzariba_Lebenslauf_AI_Software_Engineering.pdf",
+  cvWordUrl: "/El_Houcine_Ezzariba_Lebenslauf_AI_Software_Engineering.docx",
   domain: "ezzariba.com",
   url: "https://ezzariba.com",
   baseDemoUrl: "https://ezzariba.com",
@@ -18,18 +19,18 @@ export const translations = {
   de: {
     nav: {
       about: "Profil",
-      featured: "Highlights",
-      projects: "Projekte",
+      featured: "Arbeiten",
       skills: "Skills",
+      resume: "Lebenslauf",
       contact: "Kontakt",
     },
     hero: {
       badge: "Offen für Werkstudent · Teilzeit · Vollzeit",
-      title: "Frontend, das man nicht nur sieht —",
-      titleAccent: "sondern prüfen kann.",
+      title: "AI, die nicht im Prompt endet —",
+      titleAccent: "sondern zum Produkt wird.",
       subtitle:
-        "Wirtschaftsinformatik-Student und Frontend-Entwickler. Ich entwickle produktnahe Web-Apps mit React, Next.js und TypeScript — inklusive Live-Demo, Quellcode und Deployment.",
-      ctaPrimary: "3 Fallstudien ansehen",
+        "Wirtschaftsinformatik-Student und AI Software Engineer. Ich verbinde generative KI, moderne Frontends und Datenanalyse zu produktnahen Anwendungen — vom Prototyp bis zum Deployment.",
+      ctaPrimary: "Ausgewählte Arbeiten",
       ctaSecondary: "Lebenslauf laden",
       stats: {
         projects: "Projekte",
@@ -39,20 +40,20 @@ export const translations = {
     },
     about: {
       tag: "01 — Profil",
-      title: "Technisches Handwerk trifft Produktverständnis.",
-      text: "Ich studiere Wirtschaftsinformatik an der TH Köln und verbinde Frontend-Entwicklung mit Produktdenken. Meine Arbeit reicht von der Anforderungsanalyse und UI-Konzeption bis zur typisierten Implementierung, API-Anbindung und Veröffentlichung auf Cloudflare.",
+      title: "AI trifft Software Engineering und Produktverständnis.",
+      text: "Ich studiere Wirtschaftsinformatik an der TH Köln und entwickle AI-gestützte Anwendungen an der Schnittstelle von Frontend, Daten und Geschäftsprozessen. Meine Arbeit reicht von der Anforderungsanalyse und UI-Konzeption über LLM- und API-Integration bis zur typisierten Implementierung und Veröffentlichung.",
       highlights: [
         { label: "Studium", value: "Wirtschaftsinformatik · TH Köln" },
-        { label: "Fokus", value: "React · Next.js · TypeScript" },
-        { label: "Stärke", value: "UI/UX · Echtzeit · KI-Integration" },
+        { label: "Fokus", value: "AI Engineering · React · Python" },
+        { label: "Stärke", value: "Frontend · Daten · KI-Integration" },
         { label: "Verfügbar", value: "Werkstudent · Teilzeit · Vollzeit" },
       ],
     },
     featured: {
-      tag: "02 — Highlights",
-      title: "Drei Projekte. Drei überprüfbare Fallstudien.",
+      tag: "02 — Ausgewählte Arbeiten",
+      title: "Drei Projekte, die meinen Ansatz belegen.",
       subtitle:
-        "Jede Fallstudie zeigt Aufgabe, meinen Beitrag, die technische Lösung und direkt erreichbare Belege.",
+        "Keine lose Projektsammlung: Diese Fallstudien zeigen, wie ich Daten, AI und Software Engineering zu nutzbaren Produkten verbinde.",
     },
     other: {
       tag: "03 — Weitere Projekte",
@@ -61,7 +62,7 @@ export const translations = {
         "Live-Anwendungen und klar gekennzeichnete UI-Prototypen. Alle Repositories sind öffentlich einsehbar.",
     },
     skills: {
-      tag: "04 — Skills",
+      tag: "03 — Skills",
       title: "Mein Werkzeugkasten.",
       subtitle: "Technologien und Methoden, die ich täglich einsetze.",
       categories: [
@@ -111,7 +112,7 @@ export const translations = {
       ],
     },
     process: {
-      tag: "05 — Arbeitsweise",
+      tag: "04 — Arbeitsweise",
       title: "So arbeite ich.",
       steps: [
         {
@@ -132,11 +133,30 @@ export const translations = {
         },
       ],
     },
+    resume: {
+      tag: "05 — Lebenslauf",
+      title: "Mehr als eine Liste von Stationen.",
+      subtitle:
+        "Mein Profil verbindet AI Engineering, moderne Softwareentwicklung und Datenanalyse mit Wirtschaftsinformatik und praktischer Prozesserfahrung.",
+      status: "Aktueller Stand · August 2026",
+      role: "AI Software Engineer · Frontend · Datenanalyse",
+      facts: [
+        { label: "Heute", value: "Kommissionierer · Harry-Brot, Bonn" },
+        { label: "Studium", value: "B.Sc. Wirtschaftsinformatik · TH Köln" },
+        { label: "Praxis", value: "AI-Assistenten · Web-Apps · Dashboards" },
+      ],
+      proofTitle: "Mein roter Faden",
+      proof:
+        "Ich übersetze AI-Funktionen und Daten in Anwendungen, die Menschen tatsächlich nutzen können. Frontend, Softwarelogik und Analyse sind für mich keine getrennten Bereiche, sondern Teile eines vollständigen digitalen Produkts.",
+      pdf: "PDF ansehen",
+      word: "Word herunterladen",
+      previewAlt: "Vorschau des Lebenslaufs von Elhoucine Ezzariba",
+    },
     contact: {
       tag: "06 — Kontakt",
       title: "Lassen Sie uns sprechen.",
       subtitle:
-        "Ich suche eine Einstiegsposition als Frontend- oder Webentwickler. Ob Werkstudent, Teilzeit oder Vollzeit — ich freue mich auf Ihre Nachricht.",
+        "Ich suche eine Position im AI-Umfeld — von Software Engineering und Frontend bis Datenanalyse und Automatisierung. Ob Werkstudent, Teilzeit oder Vollzeit: Ich freue mich auf Ihre Nachricht.",
       email: "E-Mail senden",
       cv: "Lebenslauf",
       cvSoon: "",
@@ -153,18 +173,18 @@ export const translations = {
   en: {
     nav: {
       about: "About",
-      featured: "Highlights",
-      projects: "Projects",
+      featured: "Work",
       skills: "Skills",
+      resume: "Resume",
       contact: "Contact",
     },
     hero: {
       badge: "Open for Working Student · Part-Time · Full-Time",
-      title: "Frontend you can not only see —",
-      titleAccent: "but verify.",
+      title: "AI that does not end with a prompt —",
+      titleAccent: "but becomes a product.",
       subtitle:
-        "Business Informatics student and frontend developer. I build product-oriented web apps with React, Next.js and TypeScript — including live demo, source code and deployment.",
-      ctaPrimary: "View 3 case studies",
+        "Business Informatics student and AI Software Engineer. I combine generative AI, modern frontends and data analytics into product-oriented applications — from prototype to deployment.",
+      ctaPrimary: "Selected work",
       ctaSecondary: "Download resume",
       stats: {
         projects: "Projects",
@@ -174,20 +194,20 @@ export const translations = {
     },
     about: {
       tag: "01 — Profile",
-      title: "Technical craft meets product thinking.",
-      text: "I study Business Informatics at TH Köln and combine frontend development with product thinking. My work spans requirements analysis and UI concepts through typed implementation, API integration and Cloudflare deployment.",
+      title: "AI meets software engineering and product thinking.",
+      text: "I study Business Informatics at TH Köln and build AI-enabled applications at the intersection of frontend, data and business processes. My work spans requirements analysis and UI concepts through LLM and API integration, typed implementation and deployment.",
       highlights: [
         { label: "Education", value: "Business Informatics · TH Köln" },
-        { label: "Focus", value: "React · Next.js · TypeScript" },
-        { label: "Strength", value: "UI/UX · Real-time · AI Integration" },
+        { label: "Focus", value: "AI Engineering · React · Python" },
+        { label: "Strength", value: "Frontend · Data · AI Integration" },
         { label: "Available", value: "Working Student · Part-Time · Full-Time" },
       ],
     },
     featured: {
-      tag: "02 — Highlights",
-      title: "Three projects. Three verifiable case studies.",
+      tag: "02 — Selected work",
+      title: "Three projects that prove my approach.",
       subtitle:
-        "Each case study shows the task, my contribution, the technical solution and directly accessible evidence.",
+        "Not a loose project collection: these case studies show how I connect data, AI and software engineering into usable products.",
     },
     other: {
       tag: "03 — More Projects",
@@ -196,7 +216,7 @@ export const translations = {
         "Live applications and clearly labelled UI prototypes. Every repository is publicly accessible.",
     },
     skills: {
-      tag: "04 — Skills",
+      tag: "03 — Skills",
       title: "My toolkit.",
       subtitle: "Technologies and methods I use daily.",
       categories: [
@@ -246,7 +266,7 @@ export const translations = {
       ],
     },
     process: {
-      tag: "05 — Process",
+      tag: "04 — Process",
       title: "How I work.",
       steps: [
         {
@@ -267,11 +287,30 @@ export const translations = {
         },
       ],
     },
+    resume: {
+      tag: "05 — Resume",
+      title: "More than a list of positions.",
+      subtitle:
+        "My profile combines AI engineering, modern software development and data analytics with Business Informatics and hands-on process experience.",
+      status: "Current version · August 2026",
+      role: "AI Software Engineer · Frontend · Data Analytics",
+      facts: [
+        { label: "Today", value: "Order Picker · Harry-Brot, Bonn" },
+        { label: "Studies", value: "B.Sc. Business Informatics · TH Köln" },
+        { label: "Practice", value: "AI assistants · Web apps · Dashboards" },
+      ],
+      proofTitle: "The common thread",
+      proof:
+        "I translate AI capabilities and data into applications people can actually use. Frontend, software logic and analytics are not separate disciplines to me, but parts of a complete digital product.",
+      pdf: "View PDF",
+      word: "Download Word",
+      previewAlt: "Preview of Elhoucine Ezzariba's resume",
+    },
     contact: {
       tag: "06 — Contact",
       title: "Let's talk.",
       subtitle:
-        "I'm looking for an entry-level position as a frontend or web developer. Working student, part-time or full-time — I'd love to hear from you.",
+        "I am looking for a role in AI — spanning software engineering, frontend, data analytics and automation. Working student, part-time or full-time: I would love to hear from you.",
       email: "Send email",
       cv: "Resume",
       cvSoon: "",

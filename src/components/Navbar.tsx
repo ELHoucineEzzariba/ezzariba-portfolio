@@ -13,9 +13,9 @@ type NavbarProps = {
 
 const navLinks = [
   { key: "about" as const, href: "#about" },
-  { key: "featured" as const, href: "#featured" },
-  { key: "projects" as const, href: "#projects" },
+  { key: "featured" as const, href: "#work" },
   { key: "skills" as const, href: "#skills" },
+  { key: "resume" as const, href: "#resume" },
   { key: "contact" as const, href: "#contact" },
 ];
 
@@ -35,7 +35,7 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
       className={cn(
         "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
         scrolled
-          ? "bg-[#06060b]/80 backdrop-blur-xl border-b border-white/5 py-3"
+          ? "bg-[#f4f5f0]/90 backdrop-blur-xl border-b border-black/10 py-3"
           : "py-5"
       )}
     >
@@ -53,7 +53,7 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
             <a
               key={link.key}
               href={link.href}
-              className="text-sm text-zinc-400 transition-colors hover:text-white"
+            className="text-sm text-[#4f5663] transition-colors hover:text-[#111827]"
             >
               {t[link.key]}
             </a>
@@ -61,7 +61,7 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
         </nav>
 
         <div className="flex items-center gap-3">
-          <div className="flex rounded-full border border-white/10 p-0.5 text-xs">
+          <div className="flex rounded-full border border-black/15 bg-white/60 p-0.5 text-xs">
             {(["de", "en"] as Language[]).map((l) => (
               <button
                 key={l}
@@ -69,8 +69,8 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
                 className={cn(
                   "min-h-11 min-w-11 rounded-full px-3 py-1 uppercase transition-all",
                   lang === l
-                    ? "bg-white/10 text-white"
-                    : "text-zinc-500 hover:text-zinc-300"
+                    ? "bg-[#172554] text-white"
+                    : "text-[#626977] hover:text-[#111827]"
                 )}
               >
                 {l}
@@ -99,7 +99,7 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-t border-white/5 bg-[#06060b]/95 backdrop-blur-xl md:hidden"
+            className="overflow-hidden border-t border-black/10 bg-[#f4f5f0]/98 backdrop-blur-xl md:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-4">
               {navLinks.map((link) => (
@@ -107,7 +107,7 @@ export function Navbar({ lang, onLangChange }: NavbarProps) {
                   key={link.key}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-sm text-zinc-300 hover:bg-white/5"
+                  className="rounded-lg px-3 py-2.5 text-sm text-[#303744] hover:bg-black/5"
                 >
                   {t[link.key]}
                 </a>

@@ -49,3 +49,12 @@ next-env.d.ts
 
 # separate recruiter-facing project repositories
 /github-projects/
+
+# local working files
+/.playwright-cli/
+/tmp/
+/output/
+/.wrangler/
+*.zip
+/El_Houcine_Ezzariba_Lebenslauf_*.docx
+/El_Houcine_Ezzariba_Lebenslauf_*.pdf

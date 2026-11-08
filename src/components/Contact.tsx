@@ -13,23 +13,21 @@ export function Contact({ lang }: ContactProps) {
 
   return (
     <section id="contact" className="relative py-28">
-      <div className="glow-orb bottom-0 left-1/2 h-[400px] w-[600px] -translate-x-1/2 bg-gradient-to-r from-cyan-500/15 to-violet-500/15" />
-
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="card-glass mx-auto max-w-3xl overflow-hidden p-10 text-center sm:p-14"
+          className="contact-panel mx-auto max-w-5xl overflow-hidden p-10 sm:p-14"
         >
           <span className="section-tag">{t.tag}</span>
-          <h2 className="mt-4 font-[family-name:var(--font-syne)] text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="mt-4 max-w-3xl font-[family-name:var(--font-syne)] text-4xl font-bold tracking-tight sm:text-6xl">
             {t.title}
           </h2>
-          <p className="mx-auto mt-4 max-w-lg text-zinc-400">{t.subtitle}</p>
+          <p className="mt-5 max-w-2xl text-zinc-400">{t.subtitle}</p>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href={`mailto:${SITE.email}`} className="btn-primary">
               <Mail size={18} />
               {t.email}
@@ -38,7 +36,7 @@ export function Contact({ lang }: ContactProps) {
           </div>
 
           {(SITE.githubUrl || SITE.linkedinUrl) && (
-            <div className="mt-8 flex items-center justify-center gap-4">
+            <div className="mt-8 flex items-center gap-4">
               {SITE.githubUrl && (
                 <a
                   href={SITE.githubUrl}

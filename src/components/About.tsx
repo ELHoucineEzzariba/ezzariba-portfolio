@@ -41,9 +41,9 @@ export function About({ lang }: AboutProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="card-glass group p-6 transition-colors hover:border-white/15"
+                className="profile-fact group p-6"
               >
-                <div className="mb-4 inline-flex rounded-xl border border-white/10 bg-white/5 p-2.5 text-cyan-400 transition-colors group-hover:border-cyan-500/30 group-hover:bg-cyan-500/10">
+                <div className="profile-fact-icon">
                   <Icon size={20} />
                 </div>
                 <div className="text-xs font-medium uppercase tracking-wider text-zinc-500">

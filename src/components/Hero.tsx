@@ -16,8 +16,6 @@ export function Hero({ lang }: HeroProps) {
 
   return (
     <section className="relative flex min-h-dvh items-center overflow-hidden pt-24">
-      <div className="glow-orb -top-32 left-1/4 h-[500px] w-[500px] bg-cyan-500/20" />
-      <div className="glow-orb top-1/3 -right-32 h-[400px] w-[400px] bg-violet-500/15" />
       <div className="absolute inset-0 grid-bg" />
 
       <div className="relative mx-auto grid w-full max-w-6xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.15fr_.85fr]">
@@ -26,11 +24,11 @@ export function Hero({ lang }: HeroProps) {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/5 px-4 py-1.5 text-sm text-cyan-300"
+          className="availability-label mb-8"
         >
           <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-400" />
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#f05a28] opacity-50" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#f05a28]" />
           </span>
           {t.badge}
         </motion.div>
@@ -43,7 +41,7 @@ export function Hero({ lang }: HeroProps) {
         >
           {t.title}
           <br />
-          <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-violet-300 bg-clip-text text-transparent">
+          <span className="text-accent">
             {t.titleAccent}
           </span>
         </motion.h1>
@@ -63,7 +61,7 @@ export function Hero({ lang }: HeroProps) {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="mt-10 flex flex-wrap gap-4"
         >
-          <a href="#featured" className="btn-primary">
+          <a href="#work" className="btn-primary">
             {t.ctaPrimary}
             <ArrowRight size={18} />
           </a>
@@ -95,7 +93,7 @@ export function Hero({ lang }: HeroProps) {
               className="h-auto w-full object-cover"
             />
             <div className="portrait-caption">
-              <span>Frontend Developer</span>
+              <span>AI Software Engineer</span>
               <span>Sankt Augustin · DE</span>
             </div>
           </div>
@@ -105,7 +103,7 @@ export function Hero({ lang }: HeroProps) {
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.45 }}
-          className="mt-20 grid grid-cols-3 gap-6 border-t border-white/5 pt-10 sm:max-w-lg"
+          className="mt-20 grid grid-cols-3 gap-6 border-t border-black/10 pt-10 sm:max-w-lg"
         >
           {[
             { value: projects.length, label: t.stats.projects },
@@ -113,7 +111,7 @@ export function Hero({ lang }: HeroProps) {
             { value: liveCount, label: t.stats.stack },
           ].map((stat) => (
             <div key={stat.label}>
-              <div className="font-[family-name:var(--font-syne)] text-3xl font-bold text-white">
+              <div className="font-[family-name:var(--font-syne)] text-3xl font-bold text-[#111827]">
                 {stat.value}
               </div>
               <div className="mt-1 text-xs text-zinc-500">{stat.label}</div>

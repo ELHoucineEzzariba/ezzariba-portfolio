@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans } from "next/font/google";
+import { Archivo, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { LegalFooter } from "./_legal/LegalPage";
 
-const syne = Syne({
+const spaceGrotesk = Space_Grotesk({
   variable: "--font-syne",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const dmSans = DM_Sans({
+const archivo = Archivo({
   variable: "--font-dm-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -17,11 +16,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ezzariba.com"),
-  title: "Elhoucine Ezzariba — Frontend-Entwickler",
+  title: "Elhoucine Ezzariba — AI Software Engineer",
   description:
-    "Portfolio von Elhoucine Ezzariba — Frontend-Entwickler mit Fokus auf React, Next.js, TypeScript. Echtzeit-Apps, KI-Dashboards und moderne Web-Erlebnisse.",
+    "Portfolio von Elhoucine Ezzariba — AI Software Engineer mit Fokus auf generative KI, React, Next.js, TypeScript, Python und Datenanalyse.",
   keywords: [
-    "Frontend Developer",
+    "AI Software Engineer",
     "Webentwickler",
     "React",
     "Next.js",
@@ -31,9 +30,9 @@ export const metadata: Metadata = {
     "Köln/Bonn",
   ],
   openGraph: {
-    title: "Elhoucine Ezzariba — Frontend-Entwickler",
+    title: "Elhoucine Ezzariba — AI Software Engineer",
     description:
-      "Frontend, das man prüfen kann. React · Next.js · TypeScript · Live-Demos · Quellcode",
+      "AI wird zum Produkt. Generative KI · React · Python · Datenanalyse · Live-Demos",
     type: "website",
     locale: "de_DE",
     url: "https://ezzariba.com",
@@ -48,11 +47,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={`${syne.variable} ${dmSans.variable}`}>
+    <html lang="de" className={`${spaceGrotesk.variable} ${archivo.variable}`}>
       <body className="min-h-screen antialiased">
         <a href="#main-content" className="skip-link">Zum Hauptinhalt</a>
         {children}
-        <LegalFooter />
       </body>
     </html>
   );
